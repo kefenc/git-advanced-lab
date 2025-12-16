@@ -86,11 +86,11 @@ jobs:
       needs: deploy-dev
       environment: prod
       steps:
-
        - name: Download artifact
          uses: actions/download-artifact@v4
-           with:
-             name: app-artifact-flask
+         with:
+            name: app-artifact-flask
+             
        - name: Deploy to PROD
          run: |
             echo "Deploying to PROD"
