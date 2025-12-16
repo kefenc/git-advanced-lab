@@ -1,6 +1,0 @@
-v1
-<<<<<<< HEAD
-hotfix
-=======
-login feature
->>>>>>> b79a579 (Add login feature)
