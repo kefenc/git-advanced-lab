@@ -29,10 +29,18 @@ jobs:
     needs: build
     steps:
       - uses: actions/checkout@v4
-      - name: Lint
+
+      - uses: actions/setup-python@v5
+        with:
+           python-version: "3.11"
+           
+      - name: Installing Linting tool
         run: |
-          echo "Running lint"
-          exit 0
+          pip install flake8
+
+      - name: Run Lint check
+        run: |
+           flake8 app.py
      
 
   test:
