@@ -2,7 +2,7 @@ replicaCount: 3
 
 image:
   repository: python-demo
-  tag: "9d4b99c7145c78690472da771344a8b3dbf18468"
+  tag: "d11c4c4b554da66e953d42a2689b193eeecf3387"
   pullPolicy: IfNotPresent
 
 service:
